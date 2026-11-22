@@ -216,13 +216,13 @@ export const projects: Project[] = [
     title: 'Confidential UAE Judicial Services Mystery Shopping Programme – W1 2026',
     short: 'Service quality evaluation across email, telephone, social media, registry and ancillary services, with scorecards and response-time analysis.',
     sector: 'Government & public services · Service quality',
-    context: 'Confidential mystery shopping and service quality research',
+    context: 'Confidential mystery shopping research at The Digital Tantra',
     dataLabel: 'Synthetic demonstration data',
     confidential: true,
     tags: ['Mystery shopping', 'Service quality', 'Scorecards', 'Response time', 'NPS'],
     problem: 'A UAE judicial services organisation wanted an objective view of how consistently its public-facing channels deliver accurate, timely and professional service, and where to focus improvement.',
     background: [
-      'The original project was a confidential mystery shopping and service quality programme (Wave 1, 2026) covering five service channels.',
+      'The original project was a confidential mystery shopping and service quality programme (Wave 1, 2026) at The Digital Tantra, covering five service channels.',
       'The client is not named. No client records, customer information, internal reports, recordings or real findings are reproduced here.',
       'This page demonstrates the evaluation framework and analysis on simulated visits.'
     ],
@@ -289,12 +289,12 @@ export const projects: Project[] = [
     title: 'Kitchenware Market Research – UAE',
     short: 'Channel, pricing and assortment benchmarking for kitchenware across e-commerce marketplaces, organised retail and showrooms.',
     sector: 'Retail · Pricing & competitor benchmarking',
-    context: 'UAE kitchenware market research project',
+    context: 'Market research at The Digital Tantra',
     dataLabel: 'Synthetic demonstration data',
     tags: ['Market assessment', 'Price benchmarking', 'E-commerce research', 'Retail audit', 'Excel'],
     problem: 'A kitchenware business wanted to understand how products are priced, discounted and ranged across the main UAE sales channels before setting its own channel and pricing strategy.',
     background: [
-      'The original market research assessed the UAE kitchenware market across e-commerce (including Noon and Amazon.ae), organised retail and supermarkets, and specialist showrooms.',
+      'The original market research, carried out at The Digital Tantra, assessed the UAE kitchenware market across e-commerce (including Noon and Amazon.ae), organised retail and supermarkets, and specialist showrooms.',
       'The original observations and findings are confidential and are not reproduced.',
       'This demonstration uses a simulated price audit. Channels and brands are anonymised (Marketplace A/B, Hypermarket chain, Specialist showroom, Brand A–F), so no figure can be mistaken for a real retailer’s price.'
     ],

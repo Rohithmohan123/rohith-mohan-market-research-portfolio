@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, CheckCircle2, Download, Info, Lock } from 'lucid
 import { GithubIcon } from '@/components/BrandIcons';
 import { ChartBlock } from '@/components/Charts';
 import { getProject, projects } from '@/data/projects';
-import { asset } from '@/lib/site';
+import { asset, site } from '@/lib/site';
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -13,7 +13,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const p = getProject((await params).slug);
-  return p ? { title: p.title, description: p.short } : {};
+  return p ? { title: p.title, description: p.short, openGraph: { type: 'article', title: `${p.title} · ${site.name}`, description: p.short, url: `${site.url}/projects/${p.slug}/`, images: [{ url: `${site.url}/og/${p.slug}.jpg`, width: 1200, height: 630, alt: p.title }] }, twitter: { card: 'summary_large_image' } } : {};
 }
 
 function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {

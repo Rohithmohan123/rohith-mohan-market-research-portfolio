@@ -34,52 +34,45 @@ export const skillGroups = [
   { title: 'Research methods', items: ['Primary & secondary research', 'Quantitative research', 'Qualitative research', 'Mystery shopping', 'Customer experience research', 'Market assessment', 'Competitor benchmarking'] },
   { title: 'Survey & data', items: ['Survey design', 'Questionnaire development', 'Data cleaning & validation', 'Verbatim analysis', 'Cross-tabulation'] },
   { title: 'Customer metrics', items: ['NPS analysis', 'Customer satisfaction (CSAT) analysis', 'Service quality scorecards', 'Driver & theme analysis'] },
-  { title: 'Tools', items: ['Excel', 'Power BI', 'SQL', 'Python (basic)'] },
+  { title: 'Tools', items: ['Excel', 'Power BI', 'SQL', 'PowerPoint'] },
   { title: 'Reporting', items: ['Research reporting', 'Data visualisation', 'Dashboards', 'Insight presentations'] }
 ];
 
 export const experience = [
   {
-    role: 'Market Intelligence & Business Insights',
+    role: 'Market Research Analyst',
     org: 'The Digital Tantra',
     place: 'Remote (Bengaluru, India)',
     period: 'Oct 2024 – Oct 2026',
     current: false,
     points: [
-      'Research, survey analysis and research reporting',
-      'Customer feedback analysis and Net Promoter Score (NPS) analysis',
-      'Consumer insights and competitor benchmarking',
-      'Data visualisation and reporting in Excel and Power BI'
+      'Carried out market, industry and competitor research for clients in automotive, public services, education, real estate and consumer goods',
+      'Measured and interpreted NPS, CSAT and voice-of-customer feedback for customer experience programmes, including verbatim analysis',
+      'Contributed to mystery shopping and service-quality research for public-sector services',
+      'Built competitor benchmarking frameworks comparing offerings, pricing, positioning and communication',
+      'Cleaned and analysed survey datasets using frequencies, cross-tabulation and driver and barrier analysis',
+      'Turned findings into clear reports and interactive Power BI dashboards for client stakeholders'
     ],
-    projects: ['automotive-nps-feedback-analysis', 'uae-higher-education-demand-employment']
+    projects: ['automotive-nps-feedback-analysis', 'uae-higher-education-demand-employment', 'uae-judicial-services-mystery-shopping', 'kitchenware-market-research-uae']
   },
   {
-    role: 'Junior Software Engineer Trainee',
-    org: 'Ezses Company',
-    place: 'Kochi, India',
-    period: 'Aug 2023 – Jun 2024',
+    role: 'Junior Software Engineer',
+    org: 'Elif Consultancy & Services',
+    place: 'Kochi, India · Full-time',
+    period: 'Aug 2023 – May 2024',
     current: false,
     points: [
-      'Delivered client web projects in a cross-functional team of designers and backend developers',
+      'Delivered three client websites in a cross-functional team of designers and backend developers',
       'Designed entity-relationship models and relational database schemas (MySQL)',
-      'Validated REST APIs in Postman (GET, POST, PUT, DELETE) before frontend integration'
+      'Tested REST APIs in Postman (GET, POST, PUT, DELETE) before frontend integration'
     ],
-    projects: []
-  },
-  {
-    role: 'Data Analyst Intern',
-    org: 'Quest Innovative Solutions',
-    place: 'India',
-    period: '',
-    current: false,
-    points: [],
     projects: []
   }
 ];
 
 export const education = [
-  { degree: 'Master of Computer Applications (MCA)', school: 'CMS College of Science and Commerce', period: '2022 – 2024', grade: 'GPA 8.7' },
-  { degree: 'BSc Computer Science', school: 'Prajyothi Niketan College', period: '2019 – 2022', grade: 'GPA 6.6' }
+  { degree: 'Master of Computer Applications (MCA)', school: 'CMS College of Science and Commerce (Bharathiar University)', period: '2022 – 2024', grade: 'GPA 8.7' },
+  { degree: 'BSc Computer Science', school: 'Prajyoti Niketan College, Pudukad', period: '2019 – 2022', grade: '' }
 ];
 
 export const certifications = [

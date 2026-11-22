@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'Market Research Analyst focused on consumer insights, customer experience, NPS and research analytics. Open to roles in Dubai and across the UAE.',
   keywords: ['Market Research Analyst', 'Research Analyst', 'Consumer Insights', 'Customer Experience', 'NPS', 'Mystery Shopping', 'Dubai', 'UAE', 'Rohith Mohan'],
   authors: [{ name: site.name }],
-  openGraph: {
+  openGraph: { images: [{ url: `${site.url}/og/home.jpg`, width: 1200, height: 630 }],
     type: 'website',
     title: `${site.name} · ${site.title}`,
     description: 'Consumer insights, customer experience, NPS and research analytics case studies.',

@@ -58,7 +58,7 @@ function cvHtml() {
     </ul>
     <p class="muted" style="margin-top:6px">Public case studies with demonstration dashboards: ${esc(site.url.replace('https://', ''))}</p>
     <h2>Education</h2>
-    ${education.map((ed) => `<div class="row"><span><b>${esc(ed.degree)}</b>, ${esc(ed.school)} – ${esc(ed.grade)}</span><span class="muted">${esc(ed.period)}</span></div>`).join('')}
+    ${education.map((ed) => `<div class="row"><span><b>${esc(ed.degree)}</b>, ${esc(ed.school)}${ed.grade ? ' – ' + esc(ed.grade) : ''}</span><span class="muted">${esc(ed.period)}</span></div>`).join('')}
     <h2>Certifications</h2>
     <ul>${certifications.map((c) => `<li>${esc(c.name)}${c.issuer ? ` – ${esc(c.issuer)}` : ''}${c.year ? ` (${esc(c.year)})` : ''}</li>`).join('')}</ul>
   </body></html>`;

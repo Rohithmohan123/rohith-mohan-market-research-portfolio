@@ -57,7 +57,7 @@ export default function ExperiencePage() {
                   <p className="text-sm text-muted">{ed.period}</p>
                   <h3 className="mt-1 font-bold">{ed.degree}</h3>
                   <p className="text-ink-2">{ed.school}</p>
-                  <p className="mt-2 inline-block rounded-md bg-brand-soft px-2 py-0.5 text-sm font-semibold text-brand">{ed.grade}</p>
+                  {ed.grade && <p className="mt-2 inline-block rounded-md bg-brand-soft px-2 py-0.5 text-sm font-semibold text-brand">{ed.grade}</p>}
                 </li>
               ))}
             </ul>
