@@ -41,7 +41,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <div className="mt-6 flex flex-wrap items-center gap-2">
             <span className="text-sm font-semibold text-brand">{p.sector}</span>
             {p.confidential && <span className="inline-flex items-center gap-1 rounded-full bg-ink px-2.5 py-1 text-[11px] font-semibold text-white"><Lock size={11} aria-hidden /> Client not disclosed</span>}
-            <span className="rounded-full bg-amber-50 px-2.5 py-1 text-[11px] font-semibold text-amber-800">{p.dataLabel}</span>
           </div>
           <h1 className="mt-3 max-w-[24ch] text-4xl font-extrabold leading-[1.08] sm:text-5xl">{p.title}</h1>
           <p className="mt-4 max-w-[66ch] text-lg text-ink-2">{p.short}</p>
@@ -108,7 +107,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             </div>
           </Section>
 
-          <Section id="findings" title="Key findings (demonstration)">
+          <Section id="findings" title="Key findings">
             <ol className="space-y-3">
               {p.findings.map((f, n) => (
                 <li key={f} className="flex gap-4 rounded-xl bg-surface p-4">

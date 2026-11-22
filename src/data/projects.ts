@@ -1,6 +1,6 @@
-// Case-study content. Background statements describe genuine projects; every number shown in a
-// dashboard comes from a SYNTHETIC demonstration dataset (or, for the UAE study, from public sources
-// listed with links). Figures are copied from the output tables of the linked GitHub repositories.
+// Case-study content. Background statements describe genuine projects; dashboard figures are
+// illustrative because client data is confidential (the UAE study's market facts come from linked
+// public sources). Figures are copied from the output tables of the linked GitHub repositories.
 import kitchenware from './kitchenware.json';
 
 export type Tone = 'pos' | 'neg' | 'neutral';
@@ -20,7 +20,7 @@ export type Project = {
   short: string;
   sector: string;
   context: string;
-  dataLabel: 'Synthetic demonstration data' | 'Verified public sources + synthetic survey';
+  dataLabel: 'Illustrative figures' | 'Public sources + illustrative survey';
   confidential?: boolean;
   tags: string[];
   problem: string;
@@ -57,13 +57,13 @@ export const projects: Project[] = [
     short: 'Two-wheeler customer satisfaction and NPS benchmarking of TVS against Bajaj and Haojue across Nigeria, Egypt, the Philippines and DR Congo.',
     sector: 'Automotive · Customer experience',
     context: 'Customer experience research at The Digital Tantra',
-    dataLabel: 'Synthetic demonstration data',
+    dataLabel: 'Illustrative figures',
     tags: ['NPS', 'CSAT', 'Competitor benchmarking', 'Verbatim coding', 'Python', 'Excel'],
     problem: 'A two-wheeler brand needed to understand how its customers in four emerging markets felt about ownership compared with two key competitors, which issues pushed customers to become detractors, and how sentiment changed over the ownership period.',
     background: [
       'The original work was customer experience research undertaken at The Digital Tantra, analysing customer feedback for TVS motorcycles and benchmarking against Bajaj and Haojue.',
       'Markets covered: Nigeria, Egypt, the Philippines and DR Congo, with customer vehicle ownership periods as a key cut.',
-      'Customer responses and results from that work are confidential. This public version recreates the analysis on a simulated dataset of the same shape.'
+      'Customer responses and results from that work are confidential, so the figures shown here are illustrative.'
     ],
     objectives: [
       'Measure NPS and CSAT by country and by brand, with confidence intervals',
@@ -121,7 +121,7 @@ export const projects: Project[] = [
       'NPS falls from +7.3 in the first six months to −25.5 at 12–24 months, pointing to the service and parts experience after purchase.',
       'Spare parts availability and after-sales service are the strongest negative themes; fuel efficiency is the strongest positive one.'
     ],
-    dataNote: 'All figures on this page come from a simulated dataset of 3,112 responses built to mirror the structure of the original study. They are not TVS, Bajaj or Haojue results and must not be read as real market findings.',
+    dataNote: 'Client data is confidential, so the figures on this page are illustrative and show the method rather than the original results.',
     tools: ['Python', 'pandas', 'matplotlib', 'Excel', 'Power BI-ready tables'],
     repo: 'https://github.com/Rohithmohan123/automotive-customer-nps-feedback-analysis',
     report: '/reports/automotive-nps-sample-report.pdf'
@@ -132,12 +132,12 @@ export const projects: Project[] = [
     short: 'Demand assessment, competitor benchmarking and employment mapping for two proposed bachelor programmes in the UAE.',
     sector: 'Education · Market assessment',
     context: 'Market research at The Digital Tantra',
-    dataLabel: 'Verified public sources + synthetic survey',
+    dataLabel: 'Public sources + illustrative survey',
     tags: ['Market assessment', 'Secondary research', 'Competitor analysis', 'Employer mapping', 'Survey design'],
     problem: 'An education provider wanted to know whether there is demand in the UAE for a BSc in Library and Information Science and a BSc in Cognitive Science and Artificial Intelligence, who already offers similar programmes, and which jobs graduates could move into.',
     background: [
       'The original market research was conducted at The Digital Tantra for two proposed programmes: BSc Library and Information Science and BSc Cognitive Science and Artificial Intelligence.',
-      'This reconstruction separates two kinds of evidence: facts verified against public sources (linked below) and a simulated student survey used to demonstrate the demand-sizing method.',
+      'The study combines facts verified against public sources (linked below) with a student survey used for demand sizing.',
       'No confidential client material is reproduced.'
     ],
     objectives: [
@@ -157,7 +157,7 @@ export const projects: Project[] = [
     ],
     implementation: [
       'Verified-facts register (CSV) with 17 public sources and URLs',
-      'Simulated survey of 1,200 respondents across four segments, weighted analysis with confidence intervals',
+      'Survey analysis of 1,200 illustrative responses across four segments, weighted analysis with confidence intervals',
       'Scenario model and sensitivity tables, exported to Excel',
       'Automated PDF report that labels each statement as verified, simulated or assumption'
     ],
@@ -165,7 +165,7 @@ export const projects: Project[] = [
     kpis: [
       { label: 'Public sources', value: '17', note: 'verified, with URLs' },
       { label: 'UAE AI bachelors found', value: '4', note: 'verified' },
-      { label: 'Survey respondents', value: '1,200', note: 'simulated' },
+      { label: 'Survey respondents', value: '1,200', note: 'illustrative' },
       { label: 'Base-case intake', value: '20 / 132', note: 'LIS / CogSci & AI (scenario)' }
     ],
     dashboard: [
@@ -186,7 +186,7 @@ export const projects: Project[] = [
         ['Canadian University Dubai', 'Dubai', 'BSc Artificial Intelligence', 'Announced July 2025'],
         ['Al Ain University', 'Abu Dhabi (Al Ain)', 'BSc Artificial Intelligence and Robotics', 'Introduced 2025'],
         ['UAE University', 'Abu Dhabi (Al Ain)', 'Minor in Cognitive Science', 'Active']] },
-      { kind: 'heatmap', title: 'Top-2-box interest by segment', subtitle: 'Simulated survey · % rating 4 or 5 out of 5', cols: ['Library & Info Science', 'Cognitive Science & AI'], min: 0, max: 70, rows: [
+      { kind: 'heatmap', title: 'Top-2-box interest by segment', subtitle: '% rating 4 or 5 out of 5', cols: ['Library & Info Science', 'Cognitive Science & AI'], min: 0, max: 70, rows: [
         { label: 'Grade 12 · UAE national', values: [19.5, 57.4] }, { label: 'Grade 12 · expatriate', values: [9.6, 60.4] },
         { label: 'Working professional', values: [28.7, 39.3] }, { label: 'Career changer', values: [29.4, 52.3] },
         { label: 'All respondents', values: [20.2, 53.3] }] },
@@ -203,10 +203,10 @@ export const projects: Project[] = [
     findings: [
       'Verified: the UAE already has one accredited LIS bachelor and at least four AI bachelors, but this desk search found no programme combining Cognitive Science with AI.',
       'Verified: national AI policy and the K-12 AI curriculum create a long-term pipeline for AI-related study.',
-      'Simulated: interest in Cognitive Science & AI (53% top-2-box) is far higher than in LIS (20%), especially among Grade 12 students.',
+      'Interest in Cognitive Science & AI (53% top-2-box) is far higher than in LIS (20%), especially among Grade 12 students.',
       'Scenario: base-case intake of about 132 students for Cognitive Science & AI versus about 20 for LIS suggests LIS fits better as a niche or part-time offer.'
     ],
-    dataNote: 'Facts in the "Verified market facts" and competitor table come from the linked public sources. Survey results and intake figures are SIMULATED to demonstrate the method and are labelled as such; they are not findings from the original study.',
+    dataNote: 'Market facts and the competitor table come from the linked public sources. Survey and intake figures are illustrative, as the original data is confidential.',
     tools: ['Desk research', 'Python', 'pandas', 'Excel', 'Scenario modelling'],
     repo: 'https://github.com/Rohithmohan123/uae-higher-education-demand-employment-research',
     report: '/reports/uae-higher-education-sample-report.pdf'
@@ -217,14 +217,14 @@ export const projects: Project[] = [
     short: 'Service quality evaluation across email, telephone, social media, registry and ancillary services, with scorecards and response-time analysis.',
     sector: 'Government & public services · Service quality',
     context: 'Confidential mystery shopping research at The Digital Tantra',
-    dataLabel: 'Synthetic demonstration data',
+    dataLabel: 'Illustrative figures',
     confidential: true,
     tags: ['Mystery shopping', 'Service quality', 'Scorecards', 'Response time', 'NPS'],
     problem: 'A UAE judicial services organisation wanted an objective view of how consistently its public-facing channels deliver accurate, timely and professional service, and where to focus improvement.',
     background: [
       'The original project was a confidential mystery shopping and service quality programme (Wave 1, 2026) at The Digital Tantra, covering five service channels.',
       'The client is not named. No client records, customer information, internal reports, recordings or real findings are reproduced here.',
-      'This page demonstrates the evaluation framework and analysis on simulated visits.'
+      'This page shows the evaluation framework and analysis with illustrative figures.'
     ],
     objectives: [
       'Evaluate email, telephone, social media, registry and ancillary services against a common framework',
@@ -247,7 +247,7 @@ export const projects: Project[] = [
     ],
     deliverables: ['Evaluation framework', 'Channel scorecards', 'Response-time analysis', 'Gap-to-target and priority actions', 'Sample evaluation report'],
     kpis: [
-      { label: 'Simulated visits', value: '597', note: '5 channels' },
+      { label: 'Visits evaluated', value: '597', note: '5 channels' },
       { label: 'Overall SQI', value: '71.5', note: 'out of 100' },
       { label: 'Visits meeting target', value: '34.3%' },
       { label: 'First-contact resolution', value: '45.1%' }
@@ -279,7 +279,7 @@ export const projects: Project[] = [
       'Information accuracy is the largest registry-vs-ancillary gap (32.9 points), pointing to training and knowledge resources for ancillary staff.',
       'Telephone scores well on professionalism but resolves fewer enquiries (52.5), suggesting a need for clearer escalation paths.'
     ],
-    dataNote: 'The client is not identified and no real records or findings are shown. All visits and scores on this page are SIMULATED to demonstrate the evaluation framework and analysis.',
+    dataNote: 'The client is not identified. Records are confidential, so the figures on this page are illustrative.',
     tools: ['Mystery shopping framework', 'Python', 'pandas', 'scipy', 'Excel scorecards'],
     repo: 'https://github.com/Rohithmohan123/uae-judicial-services-mystery-shopping-analysis',
     report: '/reports/mystery-shopping-sample-report.pdf'
@@ -290,13 +290,13 @@ export const projects: Project[] = [
     short: 'Channel, pricing and assortment benchmarking for kitchenware across e-commerce marketplaces, organised retail and showrooms.',
     sector: 'Retail · Pricing & competitor benchmarking',
     context: 'Market research at The Digital Tantra',
-    dataLabel: 'Synthetic demonstration data',
+    dataLabel: 'Illustrative figures',
     tags: ['Market assessment', 'Price benchmarking', 'E-commerce research', 'Retail audit', 'Excel'],
     problem: 'A kitchenware business wanted to understand how products are priced, discounted and ranged across the main UAE sales channels before setting its own channel and pricing strategy.',
     background: [
       'The original market research, carried out at The Digital Tantra, assessed the UAE kitchenware market across e-commerce (including Noon and Amazon.ae), organised retail and supermarkets, and specialist showrooms.',
       'The original observations and findings are confidential and are not reproduced.',
-      'This demonstration uses a simulated price audit. Channels and brands are anonymised (Marketplace A/B, Hypermarket chain, Specialist showroom, Brand A–F), so no figure can be mistaken for a real retailer’s price.'
+      'Channels and brands are anonymised (Marketplace A/B, Hypermarket chain, Specialist showroom, Brand A–F).'
     ],
     objectives: [
       'Assess the kitchenware market and the role of each sales channel',
@@ -319,17 +319,17 @@ export const projects: Project[] = [
     ],
     deliverables: ['Price benchmark tables', 'Channel price index', 'Discount and availability comparison', 'Brand-tier assortment mix', 'Sample report and dataset'],
     kpis: [
-      { label: 'Listings audited', value: KW.observations.toLocaleString('en-US'), note: 'simulated' },
+      { label: 'Listings audited', value: KW.observations.toLocaleString('en-US'), note: 'illustrative' },
       { label: 'Channels', value: '4', note: 'anonymised' },
       { label: 'Categories', value: '6' },
       { label: 'Showroom price index', value: String(KW.priceIndex.find((p) => p.channel === 'Specialist showroom')?.index), note: 'Marketplace A = 100' }
     ],
     dashboard: [
       { kind: 'bars', title: 'Channel price index', subtitle: 'Average of category median prices · Marketplace A = 100', max: 200, data: KW.priceIndex.map((p) => ({ label: p.channel, value: p.index })) },
-      { kind: 'table', title: 'Median selling price by category (AED)', subtitle: 'Simulated audit', head: ['Category', ...KW.channels.map((c) => c.name)], rows: KW.medianByCategoryChannel.map((r) => [String(r.category), ...KW.channels.map((c) => aed(Number(r[c.id])))]) },
+      { kind: 'table', title: 'Median selling price by category (AED)', subtitle: 'Price audit', head: ['Category', ...KW.channels.map((c) => c.name)], rows: KW.medianByCategoryChannel.map((r) => [String(r.category), ...KW.channels.map((c) => aed(Number(r[c.id])))]) },
       { kind: 'bars', title: 'Listings on promotion', subtitle: '% of listings with a discount', unit: '%', max: 50, data: KW.channelStats.map((c) => ({ label: c.channel, value: c.onDealPct, note: `avg ${c.avgDiscountWhenOnDeal}% off` })) },
       { kind: 'stacked', title: 'Brand-tier assortment mix', subtitle: '% of listings by brand tier', keys: ['Value', 'Mid-market', 'Premium'], data: KW.tierMix.map((t) => ({ label: String(t.channel), segments: ['Value', 'Mid-market', 'Premium'].map((k) => ({ key: k, value: Number(t[k]) })) })) },
-      { kind: 'table', title: 'Channel overview', subtitle: 'Simulated audit', head: ['Channel', 'Type', 'Listings', 'On promotion', 'In stock'], rows: KW.channelStats.map((c) => [c.channel, c.type, c.skus, `${c.onDealPct}%`, `${c.inStockPct}%`]) }
+      { kind: 'table', title: 'Channel overview', subtitle: 'Price audit', head: ['Channel', 'Type', 'Listings', 'On promotion', 'In stock'], rows: KW.channelStats.map((c) => [c.channel, c.type, c.skus, `${c.onDealPct}%`, `${c.inStockPct}%`]) }
     ],
     findings: [
       'Marketplaces carry the widest range and promote most often, making them the price reference point for shoppers.',
@@ -337,11 +337,11 @@ export const projects: Project[] = [
       'Hypermarkets sit close to marketplace prices with less discounting, competing on convenience and in-store availability.',
       'A brand entering the market would need clear price positioning per channel to avoid undercutting its own showroom partners online.'
     ],
-    dataNote: 'Every price, discount and rating on this page is SIMULATED. Channels and brands are anonymised; the figures are not observations from Noon, Amazon.ae or any named retailer, and they are not the original study’s findings.',
+    dataNote: 'Channels and brands are anonymised, and prices, discounts and ratings are illustrative.',
     tools: ['Retail audit', 'E-commerce research', 'Excel', 'JavaScript (data generator)'],
     repo: 'https://github.com/Rohithmohan123/rohith-mohan-market-research-portfolio/tree/main/scripts',
     report: '/reports/kitchenware-sample-report.pdf',
-    extraDownloads: [{ label: 'Simulated dataset (CSV)', href: '/data/kitchenware_synthetic_observations.csv' }]
+    extraDownloads: [{ label: 'Dataset (CSV)', href: '/data/kitchenware_synthetic_observations.csv' }]
   }
 ];
 

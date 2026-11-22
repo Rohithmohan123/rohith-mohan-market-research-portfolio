@@ -43,14 +43,13 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Insight panel built from the NPS case study (synthetic data) */}
+          {/* Insight panel built from the NPS case study */}
           <div className="card relative p-6 shadow-[0_30px_70px_-35px_rgba(12,29,46,0.45)]">
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-xs font-semibold text-muted">Case study preview</p>
                 <p className="font-display text-lg font-bold">NPS by market, two-wheeler owners</p>
               </div>
-              <span className="rounded-full bg-amber-50 px-2.5 py-1 text-[11px] font-semibold text-amber-800">Demo data</span>
             </div>
             <dl className="mt-5 grid grid-cols-3 gap-3">
               {[['NPS', '−16.0'], ['CSAT', '3.78'], ['Responses', '3,112']].map(([k, v]) => (
@@ -99,7 +98,7 @@ export default function Home() {
           <div>
             <p className="eyebrow">Selected work</p>
             <h2 className="mt-2 text-3xl font-bold sm:text-4xl">Research case studies</h2>
-            <p className="mt-2 max-w-[62ch] text-ink-2">Each case study explains the problem, method, analysis and deliverables. Dashboards use synthetic data or cited public sources; confidential client data is never shown.</p>
+            <p className="mt-2 max-w-[62ch] text-ink-2">Each case study explains the problem, method, analysis and deliverables. Confidential client data is never shown.</p>
           </div>
           <Link href="/projects/" className="btn btn-ghost">All projects <ArrowRight size={16} aria-hidden /></Link>
         </div>

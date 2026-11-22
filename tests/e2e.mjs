@@ -83,7 +83,7 @@ try {
     for (const p of pages.filter((x) => x.startsWith('/projects/') && x !== '/projects/')) {
       await page.goto(BASE + p);
       await page.getByText('About the data.').waitFor();
-      for (const h of ['The problem', 'Research methodology', 'Analysis dashboard', 'Key findings (demonstration)', 'Implementation & deliverables']) await page.getByRole('heading', { name: h, exact: true }).waitFor();
+      for (const h of ['The problem', 'Research methodology', 'Analysis dashboard', 'Key findings', 'Implementation & deliverables']) await page.getByRole('heading', { name: h, exact: true }).waitFor();
       assert.ok(await page.locator('figure').count() >= 4, `${p}: dashboard blocks`);
     }
   });

@@ -21,7 +21,7 @@ export function ProjectCard({ p, index }: { p: Project; index: number }) {
       </dl>
       <div className="mt-5 flex flex-wrap gap-1.5">{p.tags.slice(0, 4).map((t) => <span key={t} className="chip py-0.5 text-xs">{t}</span>)}</div>
       <div className="mt-auto flex items-center justify-between pt-6 text-sm">
-        <span className="text-xs text-muted">{p.dataLabel}</span>
+        <span />
         <span className="inline-flex items-center gap-1 font-semibold text-brand">Case study <ArrowRight size={16} className="transition group-hover:translate-x-0.5" aria-hidden /></span>
       </div>
     </Link>

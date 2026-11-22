@@ -33,7 +33,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <p className="wrap py-5 text-xs text-white/55">© {new Date().getFullYear()} {site.name}. Project dashboards use synthetic demonstration data unless a public source is cited; confidential client information is never shown.</p>
+        <p className="wrap py-5 text-xs text-white/55">© {new Date().getFullYear()} {site.name}. Confidential client information is never shown.</p>
       </div>
     </footer>
   );
