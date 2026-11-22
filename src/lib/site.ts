@@ -8,7 +8,7 @@ export const site = {
   location: 'Open to roles in Dubai, Abu Dhabi and Sharjah, UAE',
   availability: 'Available to start immediately',
   // Set before publishing. Leave empty to hide the email address and send the contact form to LinkedIn.
-  email: '',
+  email: 'rohithmohan450@gmail.com',
   linkedin: 'https://www.linkedin.com/in/rohith-mohan-analyst',
   github: 'https://github.com/Rohithmohan123',
   cv: '/cv/Rohith-Mohan-Market-Research-Analyst-CV.pdf',
